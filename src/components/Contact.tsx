@@ -49,12 +49,13 @@ const Contact: React.FC = () => {
   };
 
   return (
-    <section
-      id="contact"
-      className="py-50 bg-gradient-to-br from-rose-300 via-violet-200 to-cyan-300"
-    >
+    <section id="contact" className="py-40 ">
       <div className="container mx-auto px-6">
-        <h2 className="text-4xl font-bold text-center mb-12">Get In Touch</h2>
+        <h2 className="text-4xl text-gray-100 font-bold text-center mb-12">
+          <span className="border-b-4 border-cyan-400 pb-2 inline-block">
+            Get In Touch
+          </span>
+        </h2>
         <div className="max-w-2xl mx-auto bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition transform hover:-translate-y-1 p-6">
           <form onSubmit={handleSubmit} className="space-y-6">
             <div>

@@ -4,12 +4,13 @@ import type { Project } from "../types/project";
 
 const Projects: React.FC = () => {
   return (
-    <section
-      id="projects"
-      className="py-50 bg-gradient-to-br from-purple-300 via-pink-200 to-rose-300"
-    >
+    <section id="projects" className="relative py-40">
       <div className="container mx-auto px-6">
-        <h2 className="text-4xl font-bold text-center mb-12">My Projects</h2>
+        <h2 className="text-4xl text-gray-100 font-bold text-center mb-12">
+          <span className="border-b-4 border-cyan-400 pb-2 inline-block">
+            My Projects
+          </span>
+        </h2>
 
         {/* All projects */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -17,6 +18,24 @@ const Projects: React.FC = () => {
             <ProjectCard key={project.id} project={project} />
           ))}
         </div>
+      </div>
+
+      {/* Bouncing Arrow */}
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          strokeWidth={1.5}
+          stroke="currentColor"
+          className="w-8 h-8 text-gray-100"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="m4.5 5.25 7.5 7.5 7.5-7.5m-15 6 7.5 7.5 7.5-7.5"
+          />
+        </svg>
       </div>
     </section>
   );

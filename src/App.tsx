@@ -8,12 +8,14 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className=" min-h-screen bg-gray-50">
       <Header />
       <Hero />
-      <About />
-      <Projects />
-      <Contact />
+      <div className="bg-gradient-to-br from-cyan-900 to-gray-600">
+        <About />
+        <Projects />
+        <Contact />
+      </div>
       <Footer />
     </div>
   );
