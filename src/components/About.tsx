@@ -19,7 +19,7 @@ const About: React.FC = () => {
             and collaborating to deliver impactful solutions.
           </p>
           <p className="text-lg text-gray-100 mb-8">
-            When I'm not coding, you can find me playing pickleball, finding new
+            When I'm not coding, you can find me playing handball, finding new
             songs on Spotify, or trying new restaurants.
           </p>
           <h3 className="text-2xl text-gray-100 font-semibold mb-4">
