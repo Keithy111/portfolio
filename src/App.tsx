@@ -4,6 +4,7 @@ import Hero from "./components/Hero";
 import About from "./components/About";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -13,9 +14,7 @@ function App() {
       <About />
       <Projects />
       <Contact />
-      <footer className="bg-gray-800 text-white py-8 text-center">
-        <p>&copy; 2025 Keith Yeung. All rights reserved.</p>
-      </footer>
+      <Footer />
     </div>
   );
 }
